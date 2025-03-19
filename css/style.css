@@ -36,7 +36,7 @@ header nav {
   color: #fff;
 }
 
-#content-one {
+#product-highlight {
   background-image: url("/img/iphone_pro.jpg");
   background-size: cover;
   background-position: center;
@@ -49,8 +49,13 @@ header nav {
   position: relative;
 }
 
-#content-two {
-  background: linear-gradient(to bottom, rgb(5, 45, 166) 0%, #3a6af8 50%, #f5f5f7 100%);
+#product-details {
+  background: linear-gradient(
+    to bottom,
+    rgb(5, 45, 166) 0%,
+    #3a6af8 50%,
+    #f5f5f7 100%
+  );
   text-align: center;
   padding: 1rem;
   color: #1d1d1d;
@@ -59,7 +64,7 @@ header nav {
   transition: 0.5s;
 }
 
-#content-two.changing {
+#product-details.changing {
   opacity: 0.5;
 }
 
@@ -71,14 +76,8 @@ header nav {
   justify-content: center;
 }
 
-#main-container #title {
+#main-container h1 {
   margin: 1rem;
-  font-size: 2.5rem;
-  color: #fff;
-}
-
-#main-container #title-two {
-  margin: 2rem;
   font-size: 2.5rem;
   color: #fff;
 }
@@ -91,20 +90,24 @@ header nav {
   color: #fff;
 }
 
-#main-container a {
+.button {
   border: 1px solid #0071e3;
   border-radius: 10rem;
   padding: 0.6rem 1.2rem;
 }
 
-#content-one .double-btn {
+#product-highlight .double-btn {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 7rem;
+  margin-top: 6.5rem;
 }
 
-#content-two .double-btn {
+#main-container #product-details p {
+  font-size: 1.5rem;
+}
+
+#product-details .double-btn {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -122,7 +125,7 @@ header nav {
 
 #main-container p {
   margin: 1rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #fff;
 }
 
@@ -181,8 +184,8 @@ header nav {
   outline: 2px solid #43a1ff;
 }
 
-#double-btn-content-two {
-  margin-bottom: 50px;
+.double-btn {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 700px) {
@@ -198,16 +201,12 @@ header nav {
     overflow: hidden;
   }
 
-  #content-one {
+  #product-highlight {
     height: 350px;
     padding: 0;
   }
 
-  #main-container #title {
-    font-size: 1.5rem;
-  }
-
-  #main-container #title-two {
+  #main-container h1 {
     font-size: 1.5rem;
   }
 
@@ -215,8 +214,12 @@ header nav {
     font-size: 1rem;
   }
 
-  #content-two p {
-    display: none;
+  #main-container #product-details p {
+    font-size: 1rem;
+  }
+
+  #product-details p {
+    padding-top: 1rem;
   }
 
   #main-container a {
@@ -225,12 +228,13 @@ header nav {
     font-size: 0.5rem;
   }
 
-  #content-one .double-btn {
-    margin-top: -3rem;
+  #product-highlight .double-btn {
+    margin-top: -5rem;
   }
 
   #main-container p {
     font-size: 0.5rem;
+    margin-top: -1rem;
   }
 
   #image-picker li .color {

@@ -1,11 +1,12 @@
 const buttonsColor = document.querySelectorAll("#image-picker li");
-const backgroundGradient = document.querySelector("#content-two");
+const backgroundGradient = document.querySelector("#product-details");
 const iphoneImages = document.querySelector("#product-image");
 
 // Função que retorna o gradiente baseado no ID do botão
 const gradients = {
   blue: "linear-gradient(to bottom,rgb(5, 45, 166) 0%, #3a6af8 50%, #f5f5f7 100%)",
-  green: "linear-gradient(to bottom,rgb(1, 102, 104) 0%, #7ae6e8 50%, #f5f5f7 100%)",
+  green:
+    "linear-gradient(to bottom,rgb(1, 102, 104) 0%, #7ae6e8 50%, #f5f5f7 100%)",
   pink: "linear-gradient(to bottom,rgb(120, 3, 65) 0%, #f993c9 50%, #f5f5f7 100%)",
 };
 
