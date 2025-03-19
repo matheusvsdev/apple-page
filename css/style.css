@@ -177,3 +177,58 @@ header nav {
 #double-btn-content-two {
   margin-bottom: 100px;
 }
+
+@media (max-width: 700px) {
+  #navbar li {
+    display: none;
+  }
+
+  #navbar #logo {
+    display: flex;
+  }
+
+  #main-container {
+    overflow: hidden;
+  }
+
+  #content-one {
+    height: 250px;
+    padding: 0;
+  }
+
+  #main-container #title {
+    font-size: 1.5rem;
+  }
+
+  #main-container #title-two {
+    font-size: 1.5rem;
+  }
+
+  #main-container #subtitle {
+    font-size: 1rem;
+  }
+
+  #content-two p {
+    display: none;
+  }
+
+  #main-container a {
+    border-radius: 10rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.5rem;
+  }
+
+  #content-one .double-btn {
+    margin-top: -8rem;
+  }
+
+  #main-container p {
+    font-size: 0.5rem;
+  }
+
+  #image-picker li .color {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #fff;
+  }
+}
