@@ -24,7 +24,7 @@
         <ul id="navbar">
           <li id="logo">
             <a href="#">
-              <img src="img/logo_apple.svg" alt="Apple Store" />
+              <img src="img/logo_apple.png" alt="Apple Store" />
             </a>
           </li>
           <li>
@@ -70,43 +70,47 @@
         </ul>
       </nav>
     </header>
-    <div id="ribbon">
-      <h1 class="title">iPhone 16 Pro</h1>
-      <p class="subtitle">Um iPhone novo para chamar de seu.</p>
-      <div class="double-btn">
-        <a href="#" class="btn-plus">Saiba mais</a>
-        <a href="#" class="btn-buy">Comprar</a>
+    <main id="main-container">
+      <div id="content-one">
+        <h1 class="title" id="title">iPhone 16 Pro</h1>
+        <p class="subtitle" id="subtitle">Um iPhone novo para chamar de seu.</p>
+        <div class="double-btn" id="double-btn-content-one">
+          <a href="#" class="btn-plus" id="btn-plus-ribbon">Saiba mais</a>
+          <a href="#" class="btn-buy" id="btn-buy-ribbon">Comprar</a>
+        </div>
+        <p>
+          A Apple Intelligence estará disponível em português do Brasil no
+          início de abril
+        </p>
       </div>
-      <p>
-        A Apple Intelligence estará disponível em português do Brasil no início
-        de abril
-      </p>
-    </div>
-    <div id="ribbon-plus">
-      <h1 class="title">iPhone 16 Pro</h1>
-      <p class="subtitle">Feito para Apple Intelligence.</p>
-      <div class="double-btn">
-        <a href="#" class="btn-plus">Saiba mais</a>
-        <a href="#" class="btn-buy">Comprar</a>
+      <div id="content-two">
+        <h1 class="title" id="title-two">iPhone 16 Pro</h1>
+        <p>
+          Feito para Apple Intelligence
+        </p>
+        <img id="product-image" src="img/iphon_blue.png" alt="iPhone 16 Pro" />
+        <div id="image-picker">
+          <ul>
+            <li id="blue">
+              <span class="color selected"></span>
+              <span class="description">Azul</span>
+            </li>
+            <li id="green">
+              <span class="color"></span>
+              <span class="description">Verde</span>
+            </li>
+            <li id="pink">
+              <span class="color"></span>
+              <span class="description">Rosa</span>
+            </li>
+          </ul>
+        </div>
+        <div class="double-btn" id="double-btn-content-two">
+          <a href="#" class="btn-plus" id="btn-plus-ribbon-plus">Saiba mais</a>
+          <a href="#" class="btn-buy" id="btn-buy-ribbon-plus">Comprar</a>
+        </div>
       </div>
-      <img id="product-image" src="img/iphon_blue.png" alt="iPhone 16 Pro" />
-      <div id="image-picker">
-        <ul>
-          <li id="blue">
-            <span class="color selected"></span>
-            <span class="description">Azul</span>
-          </li>
-          <li id="green">
-            <span class="color"></span>
-            <span class="description">Verde</span>
-          </li>
-          <li id="pink">
-            <span class="color"></span>
-            <span class="description">Rosa</span>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </main>
     <script src="js/script.js"></script>
   </body>
 </html>
