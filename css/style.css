@@ -117,10 +117,22 @@ header nav {
 #main-container .btn-plus {
   background-color: #0071e3;
   color: #fff;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#main-container .btn-plus:hover {
+  opacity: 0.9;
 }
 
 #main-container .btn-buy {
   color: #0071e3;
+  transition: 0.4s;
+}
+
+#main-container .btn-buy:hover {
+  background-color: #0071e3;
+  color: #fff;
 }
 
 #main-container p {
@@ -151,6 +163,14 @@ header nav {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+}
+
+#image-picker li .color {
+  transition: transform 0.4s;
+}
+
+#image-picker li:hover .color {
+  transform: scale(1.1);
 }
 
 #image-picker li .color {
@@ -186,6 +206,56 @@ header nav {
 
 .double-btn {
   margin-bottom: 20px;
+}
+
+#additional-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.block {
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  margin: 0 auto;
+}
+
+#block-watch {
+  background-image: url("/img/watch.png");
+}
+
+#block-mac {
+  background-image: url("/img/mac.png");
+}
+
+#block-ipad {
+  background-image: url("/img/ipad.png");
+}
+
+#block-card {
+  background-image: url("/img/card.png");
+}
+
+#additional-content h1,
+#additional-content p {
+  color: #1d1d1d;
+}
+
+#additional-content #block-ipad h1,
+#additional-content #block-ipad p {
+  color: #fff;
+}
+
+#additional-content h1 {
+  padding-top: 2rem;
+  margin-bottom: -0.8rem;
+}
+
+#additional-content p {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 @media (max-width: 700px) {
@@ -225,7 +295,7 @@ header nav {
   #main-container a {
     border-radius: 10rem;
     padding: 0.4rem 0.8rem;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   #product-highlight .double-btn {
@@ -241,5 +311,31 @@ header nav {
     width: 1.5rem;
     height: 1.5rem;
     border: 2px solid #fff;
+  }
+
+  #additional-content {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    gap: 1rem; /* Adiciona espaçamento entre os blocos */
+    padding: 0 1rem;
+  }
+
+  #additional-content h1 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #additional-content p {
+    font-size: 1rem;
+  }
+
+  #additional-content a {
+    font-size: 1rem;
+  }
+
+  .block {
+    width: 100%;
+    margin: 0 auto;
   }
 }
